@@ -4,31 +4,44 @@
     <meta charset="utf-8">
     <title>Formulaire</title>
     <link rel="stylesheet" href="form.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Digitalisez vos animaux de compagnie!</h1>
+    </header>
     <main>
         <form id="animal-form">
-            <label>Avez-vous des animaux ?</label><br>
-            <select name="avezVous" id="avezVous">
-                <option value="oui">Oui</option>
-                <option value="non">Non</option>
-            </select><br><br>
+            <label for="avezVous">Possédez-vous un animal de compagnie ?</label><br>
+            <label for="oui">Oui</label>
+            <input type="radio" id="oui" name="avezVous" value="oui">
+            <label for="non">Non</label>
+            <input type="radio" id="non" name="avezVous" value="non">
+            <br><br>
 
-            <label>Combien ?</label><br>
+            <label for="cb">Si oui, combien ?</label><br>
             <input type="number" id="cb" name="cb"><br><br>
 
-            <label>Noms des animaux :</label><br>
+            <label for="noms">Comment s'appellent-ils ? (séparés par des virgules)</label><br>
             <input type="text" id="noms" name="noms"><br><br>
 
-            <label>Espèce :</label><br>
-            <input type="text" id="espece" name="espèce"><br><br>
+            <label for="espèce">Quelle espèce ?</label><br>
+            <select name="espèce" id="espece">
+                <option value="chat">Chat</option>
+                <option value="chien">Chien</option>
+                <option value="reptile">Reptile</option>
+                <option value="poisson">Poisson</option>
+            </select><br><br>
 
-            <button type="submit">Valider</button>
+            <input type="submit" value="Je veux mon animal numérique!">
         </form>
 
-        <div id="resultat" style="margin-top: 30px; font-weight: bold;"></div>
+        <div id="resultat" style="margin-top: 30px; font-family: 'VT323', monospace; color: yellowgreen; font-size: 1.4em;"></div>
     </main>
+
+    <footer>
+        <h6>Société de digitalisation des animaux</h6>
+    </footer>
 
     <script src="form.js"></script>
 </body>
