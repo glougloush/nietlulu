@@ -5,6 +5,7 @@ body {
   color: yellowgreen;
   font-family: 'VT323', monospace;
   padding: 20px;
+  font-size:1.5em;
 }
 
 header {
@@ -40,6 +41,7 @@ label {
   margin-top: 15px;
   margin-bottom: 5px;
   color: #0f0;
+  font-size:1.5em;
 }
 
 input[type="text"],
